@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8688c88f-9cd7-4640-a912-f2fdb92b4f82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battlefield/settings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battlefield/settings/dev.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battlefield/settings/production.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battlefield/settings/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation/logic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simulation/views.py" afterDir="false" />
+    <list default="true" id="8688c88f-9cd7-4640-a912-f2fdb92b4f82" name="Changes" comment="working project with docker">
+      <change afterPath="$PROJECT_DIR$/simulation/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battlefield/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/battlefield/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battlefield/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/battlefield/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battlefield/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/battlefield/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/logic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +54,7 @@
     "Docker.Dockerfile.executor": "Run",
     "Docker.docker-compose.yml.web: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Python.python manage.py test.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -89,7 +74,30 @@
       <recent name="$PROJECT_DIR$/battlefield/settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Python.python manage.py test">
+    <configuration name="python manage.py test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="battlefield" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="manage.py" />
+      <option name="PARAMETERS" value="test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="battlefield" type="Python.DjangoServer" factoryName="Django server">
       <module name="battlefield" />
       <option name="ENV_FILES" value="" />
@@ -153,6 +161,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.python manage.py test" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
@@ -176,11 +185,27 @@
       <option name="presentableId" value="Default" />
       <updated>1770299683873</updated>
       <workItem from="1770299684914" duration="964000" />
-      <workItem from="1770302544586" duration="15404000" />
+      <workItem from="1770302544586" duration="18008000" />
     </task>
+    <task id="LOCAL-00001" summary="working project with docker">
+      <option name="closed" value="true" />
+      <created>1770390788303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770390788303</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working project with docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="working project with docker" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/battlefield$python_manage_py_test.coverage" NAME="python manage.py test Coverage Results" MODIFIED="1770457656882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

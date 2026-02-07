@@ -63,10 +63,12 @@ class Battlefield:
                 raise ValueError("Maximum number of countries reached.")
             if name in self.countries:
                 raise ValueError(f"Country '{name}' already exists.")
-            if not (0 < soldiers <= MAX_SOLDIERS_PER_COUNTRY):
-                raise ValueError(f"Soldier count must be between 1 and {MAX_SOLDIERS_PER_COUNTRY}.")
+            if not (0 <= soldiers <= MAX_SOLDIERS_PER_COUNTRY):
+                raise ValueError(f"Soldier count must be between 0 and {MAX_SOLDIERS_PER_COUNTRY}.")
             if not (0 <= tanks <= MAX_TANKS_PER_COUNTRY):
                  raise ValueError(f"Tank count must be between 0 and {MAX_TANKS_PER_COUNTRY}.")
+            if soldiers == 0 and tanks == 0:
+                raise ValueError("Country must have at least one unit.")
 
             country_id = self.next_country_id
             self.country_id_map[name] = country_id

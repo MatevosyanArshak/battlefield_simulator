@@ -26,6 +26,16 @@ You can also use the provided `run.sh` script to build and run the service.
     bash run.sh
     ```
 
+## Testing
+
+The project includes a suite of tests for the core logic and API endpoints.
+
+To run the tests, use the following command:
+
+```bash
+python manage.py test
+```
+
 ## API and Swagger
 
 The simulation is controlled via a set of API endpoints. A Swagger UI is available for exploring and interacting with the API at:
@@ -66,7 +76,7 @@ Add two or more countries to the battlefield before starting the simulation.
 
 *   **URL:** `/api/stop`
 *   **Method:** `POST`
-*   **Description:** Pauses the simulation, freezing the battlefield in its current state.
+*   `Description:` Pauses the simulation, freezing the battlefield in its current state.
 
 #### 5. Restart the Simulation
 
