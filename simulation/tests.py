@@ -1,14 +1,22 @@
+import os
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'battlefield.settings.test')
+import django
+django.setup()
+
 from django.test import TestCase
 from rest_framework.test import APITestCase
 from rest_framework import status
 from unittest.mock import patch
 
-from .logic import Battlefield, Soldier, Tank, battlefield
+from .logic import  Soldier, battlefield
 
 class BattlefieldLogicTests(TestCase):
     def setUp(self):
-        # We create a new Battlefield instance for each test to ensure isolation
-        self.bf = Battlefield()
+        self.bf = battlefield
+        self.bf.restart_simulation()
+
+    def tearDown(self):
+        self.bf.stop_simulation()
 
     def test_add_country_success(self):
         self.bf.add_country("CountryA", soldiers=5, tanks=2)
@@ -88,7 +96,8 @@ class BattlefieldLogicTests(TestCase):
         soldier.x, soldier.y = 5, 5
         tank.x, tank.y = 5, 5
 
-        self.bf.run_step() # move, collide, and remove
+        self.bf._resolve_collisions()
+        self.bf._remove_defeated_countries()
         self.assertNotIn("CountryA", self.bf.countries)
         self.assertIn("CountryB", self.bf.countries)
 
@@ -104,8 +113,10 @@ class BattlefieldLogicTests(TestCase):
 
 class SimulationAPITests(APITestCase):
     def setUp(self):
-        # Reset the global battlefield instance before each test
         battlefield.restart_simulation()
+
+    def tearDown(self):
+        battlefield.stop_simulation()
 
     def test_add_country_api(self):
         url = "/api/countries"

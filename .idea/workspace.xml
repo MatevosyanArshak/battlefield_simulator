@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8688c88f-9cd7-4640-a912-f2fdb92b4f82" name="Changes" comment="working project with docker">
-      <change afterPath="$PROJECT_DIR$/simulation/tests.py" afterDir="false" />
+    <list default="true" id="8688c88f-9cd7-4640-a912-f2fdb92b4f82" name="Changes" comment="added tests, fix units count logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simulation/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/simulation/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +49,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Django tests.Test: .executor": "Run",
+    "Django tests.Test: simulation.tests.BattlefieldLogicTests.executor": "Run",
+    "Django tests.Test: simulation.tests.BattlefieldLogicTests.test_add_country_success.executor": "Run",
+    "Django tests.Test: simulation.tests.SimulationAPITests.executor": "Run",
+    "Django tests.Test: simulation.tests.SimulationAPITests.test_add_country_api.executor": "Run",
     "Docker.Dockerfile.executor": "Run",
     "Docker.docker-compose.yml.web: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
@@ -74,8 +77,30 @@
       <recent name="$PROJECT_DIR$/battlefield/settings" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python manage.py test">
-    <configuration name="python manage.py test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Django tests.Test: simulation.tests.BattlefieldLogicTests.test_add_country_success">
+    <configuration name="Test: simulation.tests.BattlefieldLogicTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="battlefield" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="battlefield.settings.test" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="simulation.tests.BattlefieldLogicTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: simulation.tests.BattlefieldLogicTests.test_add_country_success" type="DjangoTestsConfigurationType" temporary="true">
       <module name="battlefield" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,18 +109,79 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="manage.py" />
-      <option name="PARAMETERS" value="test" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="TARGET" value="simulation.tests.BattlefieldLogicTests.test_add_country_success" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: simulation.tests.SimulationAPITests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="battlefield" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="simulation.tests.SimulationAPITests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: simulation.tests.SimulationAPITests.test_add_country_api" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="battlefield" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="simulation.tests.SimulationAPITests.test_add_country_api" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: " type="DjangoTestsConfigurationType" temporary="true">
+      <module name="battlefield" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
     <configuration name="battlefield" type="Python.DjangoServer" factoryName="Django server">
@@ -122,14 +208,6 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml" />
       <method v="2" />
@@ -138,33 +216,13 @@
       <deployment type="dockerfile" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="web" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.python manage.py test" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
+        <item itemvalue="Django tests.Test: simulation.tests.BattlefieldLogicTests.test_add_country_success" />
+        <item itemvalue="Django tests.Test: simulation.tests.SimulationAPITests" />
+        <item itemvalue="Django tests.Test: simulation.tests.BattlefieldLogicTests" />
+        <item itemvalue="Django tests.Test: " />
+        <item itemvalue="Django tests.Test: simulation.tests.SimulationAPITests.test_add_country_api" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +243,7 @@
       <option name="presentableId" value="Default" />
       <updated>1770299683873</updated>
       <workItem from="1770299684914" duration="964000" />
-      <workItem from="1770302544586" duration="18008000" />
+      <workItem from="1770302544586" duration="21462000" />
     </task>
     <task id="LOCAL-00001" summary="working project with docker">
       <option name="closed" value="true" />
@@ -195,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770390788303</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added tests, fix units count logic">
+      <option name="closed" value="true" />
+      <created>1770460004938</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770460004938</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,9 +269,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working project with docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="working project with docker" />
+    <MESSAGE value="added tests, fix units count logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests, fix units count logic" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/battlefield$Test__simulation_tests_BattlefieldLogicTests.coverage" NAME="Test: simulation.tests.BattlefieldLogicTests Coverage Results" MODIFIED="1770460797993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/battlefield$python_manage_py_test.coverage" NAME="python manage.py test Coverage Results" MODIFIED="1770457656882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/battlefield$Test__simulation_tests_SimulationAPITests_test_add_country_api.coverage" NAME="Test: simulation.tests.SimulationAPITests.test_add_country_api Coverage Results" MODIFIED="1770460331295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/battlefield$Test__simulation_tests_SimulationAPITests.coverage" NAME="Test: simulation.tests.SimulationAPITests Coverage Results" MODIFIED="1770461271959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/battlefield$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1770460568868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/battlefield$Test__simulation_tests_BattlefieldLogicTests_test_add_country_success.coverage" NAME="Test: simulation.tests.BattlefieldLogicTests.test_add_country_success Coverage Results" MODIFIED="1770461730056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
